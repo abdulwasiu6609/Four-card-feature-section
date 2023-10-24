@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  
+  <title>Four card feature section</title>
+
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: 30px auto;
+    }
+    #para {
+      font-size: 22px;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    .card {
+      
+      width: 100%;
+      padding: 20px;
+      position: relative;
+      height: 200px;
+      border-radius: 10px;
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
+    }
+     p {
+      color: hsl(229, 6%, 66%);
+      
+    }
+
+    .one >img, .two >img, .three >img, .four >img {
+      max-width: 100%;
+      height: auto;
+      position: absolute;
+      right: 30px;
+      bottom: 20px;
+
+    }
+    .one{
+      border-top: 5px solid hsl(180, 62%, 55%);
+    }
+    .two{
+      border-top: 5px solid hsl(0, 78%, 62%);
+    }
+    .three{
+      border-top: 5px solid hsl(34, 97%, 64%);
+    }
+    .four{
+      border-top: 5px solid hsl(212, 86%, 64%);
+    }
+
+    @media only screen and (min-width: 375px) {
+      .header {
+        width: 70%;
+        margin: 20px auto;
+        text-align: center;
+
+      }
+      
+    .cards {
+      position: relative;
+    }
+
+    .card {
+      max-width: 30%;
+      max-height: 200px ;
+      margin: 0 auto;
+    }
+    .one{
+      position: absolute;
+      top:25%;
+      left: 0;
+
+    }
+    .four{
+      position: absolute;
+      top:25%;
+      right: 0;
+
+    }
+
+    .one >img, .two >img, .three >img, .four >img {
+      max-width: 20%;
+
+    }
+
+  
+}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="header">
+      <p id="para">Reliable, efficient delivery</p>
+      <h2>Powered by Technology</h2>
+      <p>Our Artificial Intelligence powered tools use millions of project data points 
+        to ensure that your project is successful</p>
+    </section>
+    <section class="cards">
+      <div class="card one">
+        <h2>Supervisor</h2>
+        <p>
+          Monitors activity to identify project roadblocks</p>
+        <img src="images/icon-supervisor.svg" alt="Supervisor Icon">
+      </div>
+      <div class="card two">
+        <h2>Team Builder</h2>
+        <p>
+          Scans our talent network to create the optimal team for your project</p>
+        <img src="images/icon-team-builder.svg" alt="team Builder Icon">
+      </div>
+      <div class="card three">
+        <h2>Karma</h2>
+        <p>
+          Regularly evaluates our talent to ensure quality</p>
+        <img src="images/icon-karma.svg" alt="Karma">
+      </div>
+      <div class="card four">
+        <h2>Calculator</h2>
+        <p>
+          Uses data from past projects to provide better delivery estimates</p>
+        <img src="images/icon-calculator.svg" alt="Calculator">
+      </div>
+    </section>
+  </main>
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>
